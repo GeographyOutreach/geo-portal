@@ -1,0 +1,14 @@
+body{
+  margin:0;
+  padding:0;
+  background:#FFF;
+  font-family: "Mplus 1p";
+  color: #333333 ;
+  line-height:1.8em;
+
+}
+
+#bloc{
+     width: 960px;
+     margin: 0 auto;
+}
