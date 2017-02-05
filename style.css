@@ -663,3 +663,18 @@ a[data-lightbox]:hover img{
         display:none;
     }
 }
+
+/* = 追加事項
+-------------------------------------------------------------- */
+li.menu{
+	float: left;
+	width: 120px;
+	height: 40px;
+
+}
+
+li#m-all{
+	position: relative;
+	padding-bottom: .5em;
+	border-bottom: 4px solid #ccc;
+}
