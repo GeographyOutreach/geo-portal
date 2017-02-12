@@ -678,3 +678,10 @@ li#m-all{
 	padding-bottom: .5em;
 	border-bottom: 4px solid #ccc;
 }
+
+.icon-center{
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
