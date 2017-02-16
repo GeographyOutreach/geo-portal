@@ -669,15 +669,16 @@ a[data-lightbox]:hover img{
 -------------------------------------------------------------- */
 li.menu{
 	float: left;
-	width: 120px;
-	height: 40px;
+	width: 100px;
+	height: 32px;
+	margin-left: 3px;
+	margin-right: 3px;
 
 }
 
-li#m-all{
+.m-all{
 	position: relative;
 	padding-bottom: .5em;
-	border-bottom: 4px solid #ccc;
 }
 
 .icon-center{
@@ -699,5 +700,43 @@ h3{
 .title{
 	width: 300px;
 	margin: 20px auto;
+}
 
+.centered {
+	width: 954px;
+	text-align:center;
+	display:block;
+	margin:0 auto;
+	list-style: none;
+}
+
+/* = ナビゲーションバーの色
+-------------------------------------------------------------- */
+
+#all{
+	border-bottom: 4px solid #000000;
+}
+#media{
+	border-bottom: 4px solid #FC534B;
+}
+#publisher{
+	border-bottom: 4px solid #FFD400;
+}
+#goods{
+	border-bottom: 4px solid #9E50E7;
+}
+#club{
+	border-bottom: 4px solid #00C54E;
+}
+#univ{
+	border-bottom: 4px solid #FF9526;
+}
+#organization{
+	border-bottom: 4px solid #00B9DA;
+}
+#activity{
+	border-bottom: 4px solid #EB0048;
+}
+#blog{
+	border-bottom: 4px solid #3542B2;
 }
