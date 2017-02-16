@@ -75,7 +75,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .l-bloc button:hover{
 	color:rgba(0,0,0,.7);
 }
-.l-bloc h1,.l-bloc h2,.l-bloc h3,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
+.l-bloc h1,.l-bloc h2,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
 	color:rgba(0,0,0,.7);
 }
 .l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
@@ -324,6 +324,7 @@ button{
 }
 .text-center .a-btn{
 	padding: 6px 0;
+
 }
 .a-block{
 	width:100%;
@@ -684,4 +685,19 @@ li#m-all{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.bgc-gray{
+	background-color:#F8F8F8;
+}
+
+h3{
+	padding-bottom: .3em;
+	border-bottom: 1px solid #000;
+	color: #000000;
+}
+.title{
+	width: 300px;
+	margin: 20px auto;
+
 }
