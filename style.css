@@ -374,7 +374,7 @@ button{
 /* = Panels
 -------------------------------------------------------------- */
 .panel{
-	border:0!important;
+	border:0;
 	box-shadow: 0 0 2px rgba(0,0,0,.4);
 }
 .panel-heading, .panel-footer{
@@ -714,29 +714,29 @@ h3{
 -------------------------------------------------------------- */
 
 #all{
-	border-bottom: 4px solid #000000;
+	border-bottom: 5px solid #000000;
 }
 #media{
-	border-bottom: 4px solid #FC534B;
+	border-bottom: 5px solid #FC534B;
 }
 #publisher{
-	border-bottom: 4px solid #FFD400;
+	border-bottom: 5px solid #FFD400;
 }
 #goods{
-	border-bottom: 4px solid #9E50E7;
+	border-bottom: 5px solid #9E50E7;
 }
 #club{
-	border-bottom: 4px solid #00C54E;
+	border-bottom: 5px solid #00C54E;
 }
 #univ{
-	border-bottom: 4px solid #FF9526;
+	border-bottom: 5px solid #FF9526;
 }
 #organization{
-	border-bottom: 4px solid #00B9DA;
+	border-bottom: 5px solid #00B9DA;
 }
 #activity{
-	border-bottom: 4px solid #EB0048;
+	border-bottom: 5px solid #EB0048;
 }
 #blog{
-	border-bottom: 4px solid #3542B2;
+	border-bottom: 5px solid #3542B2;
 }
