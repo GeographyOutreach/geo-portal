@@ -10,16 +10,32 @@
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link href="css/bootstrap-modal.css" rel="stylesheet" />
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+
     <!-- リモートモーダルダイアログ の読込先 -->
-      <!-- <script>
-        $('.ls-modal').on('click', function(e){
-          e.preventDefault();
-          $('#myModal').modal('show').find('.modal-body').load($(this).attr('href'));
-        });
-      </script> -->
+      <script>
+      // $("#myModal").on("show.bs.modal", function(e) {
+      //     var link = $(e.relatedTarget);
+      //     $(this).find(".modal-body").load(link.attr("href"));
+      // });
+      $('[data-toggle="ajaxModal"]').on('click',
+                    function(e) {
+                      $('#ajaxModal').remove();
+                      e.preventDefault();
+                      var $this = $(this)
+                        , $remote = $this.data('remote') || $this.attr('href')
+                        , $modal = $('<div class="modal" id="ajaxModal"><div class="modal-body"></div></div>');
+                      $('body').append($modal);
+                      $modal.modal({backdrop: 'static', keyboard: false});
+                      $modal.load($remote);
+                    }
+                  );
+      </script>
 
     <title>Geopoetal</title>
 </head>
@@ -122,7 +138,7 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="panel">
-          <a class='ls-modal'  data-toggle="modal" data-target="#sampleModal">
+          <a href="./modal_remote_dialog.html" data-toggle="modal" data-target="#myModal">
   					<div class="panel-heading">
               <img src="img/placeholder-image.png" class="img-responsive"/>
   					</div>
@@ -311,28 +327,23 @@
 
 
 <!-- Modal -->
-<!-- Default bootstrap modal example -->
-<!-- モーダル・ダイアログ -->
-<div class="modal fade" id="sampleModal" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-				<h4 class="modal-title">タイトル</h4>
-			</div>
-			<div class="modal-body">
-				本文
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-				<button type="button" class="btn btn-primary">ボタン</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Modal END -->
+<div class="modal-dialog" id="myModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+            <a href="#" class="btn btn-primary">Button</a>
+            <a href="#" class="btn btn-primary">Another button...</a>
+        </div>
+    </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
 
-</div>
+
 <!-- Google Analytics -->
 
 <!-- Google Analytics END -->
