@@ -13,6 +13,11 @@
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+    <script>
+    $(function() {
+      $('#page').load('external.html');
+    });
+    </script>
     <!-- リモートモーダルダイアログ の読込先 -->
       <!-- <script>
         $('.ls-modal').on('click', function(e){
@@ -89,31 +94,31 @@
     <div class="row centered">
       <ul class="nav navbar-nav" style="">
         <li class="menu text-center m-all" id="all">
-            すべて
+            <a href="./index.html">すべて</a>
         </li>
         <li class="menu text-center m-all" id="media">
-            メディア
+            <a href="./index.html">メディア</a>
         </li>
         <li class="menu text-center m-all" id="publisher">
-            出版社
+            <a href="./index.html">出版社</a>
         </li>
         <li class="menu text-center m-all" id="goods">
-            グッズ
+            <a href="./index.html">グッズ</a>
         </li>
         <li class="menu text-center m-all" id="club">
-            大学サークル
+            <a href="./index.html">大学サークル</a>
         </li>
         <li class="menu text-center m-all" id="univ">
-            学べる大学
+            <a href="./index.html">学べる大学</a>
         </li>
         <li class="menu text-center m-all" id="organization">
-            公的組織
+            <a href="./index.html">公的組織</a>
         </li>
         <li class="menu text-center m-all" id="activity">
-            活動団体
+            <a href="./index.html">活動団体</a>
         </li>
         <li class="menu text-center m-all" id="blog">
-            個人ブログ
+            <a href="./index.html">個人ブログ</a>
         </li>
       </ul>
     </div>
@@ -252,7 +257,7 @@
 					About Geographic Portal
 				</h2>
         <h4 class="text-center mg-lg">
-          このサイトは全国の地理学の取り組みを集め閲覧できるサイトです。
+          このサイトは全国の地理に関する取り組みを集め閲覧できるサイトです。
         </h4>
 			</div>
 		</div>

@@ -4,38 +4,34 @@
     <meta charset="utf-8">
     <meta name="keywords" content="地理学, Geography">
     <meta name="description" content="このサイトは全国の地理学の取り組みを集め閲覧できるサイトです。">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-    <link href="css/bootstrap-modal.css" rel="stylesheet" />
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
-    <script src="./js/bootstrap-modal.js"></script>
-    <script src="./js/bootstrap-transition.js"></script>
-
+    <script>
+    $(function() {
+      $('#media').load('./media.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+      $('#page').load('./test2.html');
+    });
+    </script>
     <!-- リモートモーダルダイアログ の読込先 -->
-      <script>
-      // $("#myModal").on("show.bs.modal", function(e) {
-      //     var link = $(e.relatedTarget);
-      //     $(this).find(".modal-body").load(link.attr("href"));
-      // });
-      $('[data-toggle="ajaxModal"]').on('click',
-                    function(e) {
-                      $('#ajaxModal').remove();
-                      e.preventDefault();
-                      var $this = $(this)
-                        , $remote = $this.data('remote') || $this.attr('href')
-                        , $modal = $('<div class="modal" id="ajaxModal"><div class="modal-body"></div></div>');
-                      $('body').append($modal);
-                      $modal.modal({backdrop: 'static', keyboard: false});
-                      $modal.load($remote);
-                    }
-                  );
-      </script>
+      <!-- <script>
+        $('.ls-modal').on('click', function(e){
+          e.preventDefault();
+          $('#myModal').modal('show').find('.modal-body').load($(this).attr('href'));
+        });
+      </script> -->
 
     <title>Geopoetal</title>
 </head>
@@ -105,143 +101,36 @@
     <div class="row centered">
       <ul class="nav navbar-nav" style="">
         <li class="menu text-center m-all" id="all">
-            すべて
+            <a href="./index.html">すべて</a>
         </li>
         <li class="menu text-center m-all" id="media">
-            メディア
+            <a href="./index.html">メディア</a>
         </li>
         <li class="menu text-center m-all" id="publisher">
-            出版社
+            <a href="./index.html">出版社</a>
         </li>
         <li class="menu text-center m-all" id="goods">
-            グッズ
+            <a href="./index.html">グッズ</a>
         </li>
         <li class="menu text-center m-all" id="club">
-            大学サークル
+            <a href="./index.html">大学サークル</a>
         </li>
         <li class="menu text-center m-all" id="univ">
-            学べる大学
+            <a href="./index.html">学べる大学</a>
         </li>
         <li class="menu text-center m-all" id="organization">
-            公的組織
+            <a href="./index.html">公的組織</a>
         </li>
         <li class="menu text-center m-all" id="activity">
-            活動団体
+            <a href="./index.html">活動団体</a>
         </li>
         <li class="menu text-center m-all" id="blog">
-            個人ブログ
+            <a href="./index.html">個人ブログ</a>
         </li>
       </ul>
     </div>
   </div>
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="panel">
-          <a href="./modal_remote_dialog.html" data-toggle="modal" data-target="#myModal">
-  					<div class="panel-heading">
-              <img src="img/placeholder-image.png" class="img-responsive"/>
-  					</div>
-  					<div class="panel-body">
-  						<ul class="list-unstyled list-sp-sm">
-  							<li>
-  									公的組織
-  							</li>
-  							<li>
-  								<h4 class="mg-sm">
-  									日本地理学会
-  								</h4>
-  							</li>
-  							<li>
-  								<p class="mg-md">
-  									hogehoge hogehoge hoge hogegehoge hogeghoge
-  								</p>
-  							</li>
-  						</ul>
-  					</div>
-        </a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="panel">
-          <a href="">
-  					<div class="panel-heading">
-              <img src="img/placeholder-image.png" class="img-responsive"/>
-  					</div>
-  					<div class="panel-body">
-  						<ul class="list-unstyled list-sp-sm">
-  							<li>
-  									地理が学べる大学
-  							</li>
-  							<li>
-  								<h4 class="mg-sm">
-  									日本大学文理学部地理学科
-  								</h4>
-  							</li>
-  							<li>
-  								<p class="mg-md">
-  									hogehoge hogehoge hoge hogegehoge hogeghoge
-  								</p>
-  							</li>
-  						</ul>
-  					</div>
-          </a>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="panel">
-          <a href="">
-  					<div class="panel-heading">
-              <img src="img/placeholder-image.png" class="img-responsive"/>
-  					</div>
-  					<div class="panel-body">
-  						<ul class="list-unstyled list-sp-sm">
-  							<li>
-  									メディア
-  							</li>
-  							<li>
-  								<h4 class="mg-sm">
-  									ブラタモリ
-  								</h4>
-  							</li>
-  							<li>
-  								<p class="mg-md">
-  									hogehoge hogehoge hoge hogegehoge hogeghoge
-  								</p>
-  							</li>
-  						</ul>
-  					</div>
-          </a>
-				</div>
-			</div>
-      <div class="col-sm-3">
-				<div class="panel">
-          <a href="">
-  					<div class="panel-heading">
-              <img src="img/placeholder-image.png" class="img-responsive"/>
-  					</div>
-  					<div class="panel-body">
-  						<ul class="list-unstyled list-sp-sm">
-  							<li>
-  									地理関係出版社
-  							</li>
-  							<li>
-  								<h4 class="mg-sm">
-  									古今書院
-  								</h4>
-  							</li>
-  							<li>
-  								<p class="mg-md">
-  									hogehoge hogehoge hoge hogegehoge hogeghoge
-  								</p>
-  							</li>
-  						</ul>
-  					</div>
-          </a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div id="page">
 </div>
 <!-- content -->
 
@@ -327,23 +216,48 @@
 
 
 <!-- Modal -->
-<div class="modal-dialog" id="myModal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title"></h4>
+<div class="modal fade" id="sampleModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+			</div>
+			<div class="modal-body">
+        <div class="row">
+          <div class="col-md-7" style="padding-left: 35px; padding-right: 5px;">
+            <img src="./content/1-2.png" class="img-responsive icon-center mg-lg" />
+          </div>
+          <div class="col-sm-5" style="padding-left: 10px; padding-right: 10px;">
+            <p style="margin-top: 5px;">公的組織</P>
+            <h4 style="margin-bottom: 0px;">日本地理学会</h4>
+            <a href="http://www.ajg.or.jp/">http://www.ajg.or.jp/</a>
+            <h4>
+              SNS
+            </h4>
+            <div class="row" style="margin-right:30px;">
+              <div class="col-sm-3" style="padding-right: 5px;">
+                <img src="./img/sns/facebook.png" class="img-responsive"/>
+              </div>
+              <div class="col-sm-3" style="padding-left: 5px; padding-right: 5px;">
+                <img src="./img/sns/twitter.png" class="img-responsive"/>
+              </div>
+              <div class="col-sm-6">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12" style="padding-left: 35px; padding-right: 35px; margin-bottom: 20px;">
+            　公益社団法人日本地理学会は1925（大正14）年に創立された日本の地理学界を代表する学会です．現在の会員は，大学・研究所・企業の研究者・技術者や小・中・高校の教員を中心に，その数は約3,000人に達しています．会員の研究分野は地形・気候・水文・植生・環境などの自然地理，経済・社会・政治・人口・都市などの人文地理のほか，世界各地の自然・歴史・産業・文化などの総合的な地域研究，地図・リモートセンシング・GIS（地理情報システム）など，広い分野にわたっています．
+          </div>
         </div>
-        <div class="modal-footer">
-            <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
-            <a href="#" class="btn btn-primary">Button</a>
-            <a href="#" class="btn btn-primary">Another button...</a>
-        </div>
-    </div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal END -->
 
-
+</div>
 <!-- Google Analytics -->
 
 <!-- Google Analytics END -->
